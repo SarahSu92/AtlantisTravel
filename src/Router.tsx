@@ -64,6 +64,6 @@ export const Router = createBrowserRouter(
     },
   ],
   {
-    basename: '/AtlantisFrame', // Important for gh-pages!
+    basename: '/AtlantisTravel', // Important for gh-pages!
   }
 );
