@@ -1,4 +1,4 @@
-# Atlantis Frame
+# Atlantis Travel
 
 This is a travel guide website. Discover new places to travel to or jsut enjoy some facts about various destinations around the world. Use the search bar to filter destinations based on your activity you are
 intereted in, or just visit all destinations. On each destination you'll find a Interactive Attractions Map that displays all popular attractions at the destination on an interactive map. 
