@@ -44,7 +44,8 @@ export const Footer = () => {
         </div>
         <div className="footercontent">
           <h4 className="underline">Legal</h4>
-          
+          <span className="links">Privacy Policy</span>
+          <span className="links">Terms of Use</span>
         </div>
       </div>
       <div className="copyright">

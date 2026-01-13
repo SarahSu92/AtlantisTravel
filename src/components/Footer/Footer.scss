@@ -23,6 +23,7 @@
   transition: color 0.3s;
   font-size: 1rem;
   margin-left: 1rem;
+  cursor: pointer;
 
   &:focus {
     outline: 2px solid #f94a0b;
@@ -96,11 +97,8 @@
 @media screen and (min-width: 1024px) {
   .contact-wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-bottom: 2rem;
-    align-items: start;
+    grid-template-columns: repeat(3, auto); // varje kolumn 200px
+    justify-content: center;                 // centrera hela griden
+    gap: 2rem;
   }
 }
