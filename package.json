@@ -2,6 +2,7 @@
   "name": "atlantisframe",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://sarahsu92.github.io/AtlantisTravel/",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,9 +11,7 @@
     "preview": "vite preview",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "deploy": "gh-pages -d dist",
-    "homepage": "https://sarahsu92.github.io/AtlantisTravel/"
-    
+    "deploy": "gh-pages -d dist"    
   },
   "dependencies": {
     "leaflet": "^1.9.4",
