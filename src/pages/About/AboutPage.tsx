@@ -1,4 +1,4 @@
-import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram } from 'react-icons/fa';
 import './About.scss';
 
 export const AboutPage = () => {
@@ -46,15 +46,6 @@ export const AboutPage = () => {
               aria-label="Facebook"
             >
               <FaFacebookF />
-            </a>
-            <a
-              className="icon"
-              href="https://www.twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Twitter"
-            >
-              <FaTwitter />
             </a>
             <a
               className="icon"

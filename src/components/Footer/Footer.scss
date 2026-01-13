@@ -9,11 +9,11 @@
   text-decoration: underline;
   color: #fff;
 
-   &:focus {
-   outline: 2px solid #f94a0b;
-   outline-offset: 2px;
-   border-radius: 0;
-    
+  &:focus {
+    outline: 2px solid #f94a0b;
+    outline-offset: 2px;
+    border-radius: 0;
+
   }
 }
 
@@ -25,10 +25,10 @@
   margin-left: 1rem;
 
   &:focus {
-   outline: 2px solid #f94a0b;
-   outline-offset: 2px;
-   border-radius: 0;
-    
+    outline: 2px solid #f94a0b;
+    outline-offset: 2px;
+    border-radius: 0;
+
   }
 
   &:hover {
@@ -43,11 +43,11 @@
   font-size: 1rem;
   margin-left: 1rem;
 
-   &:focus {
-   outline: 2px solid #f94a0b;
-   outline-offset: 2px;
-   border-radius: 0;
-    
+  &:focus {
+    outline: 2px solid #f94a0b;
+    outline-offset: 2px;
+    border-radius: 0;
+
   }
 
   &:hover {
@@ -76,29 +76,31 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;            
-    left: 50%;         
-    transform: translateX(-50%); 
-    width: 90%;        
-    height: 1px;       
-    background-color: #fff; 
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 1px;
+    background-color: #fff;
   }
 
 }
 
 @media screen and (min-width: 768px) {
+  .contactus {
+    position: relative;
+    left: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
   .contact-wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
     text-align: center;
     padding-bottom: 2rem;
     align-items: start;
-  }
-
-  .contactus {
-    position: relative;
-    left: 50%;
   }
 }

@@ -41,30 +41,10 @@ export const Footer = () => {
           >
             Instagram
           </a>
-          <a
-            className="followus"
-            href="https://www.twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Twitter"
-          >
-            Twitter
-          </a>
         </div>
-
-        <div className="contactus">
-          <h4>
-            <Link to="/ContactPage" className="underline">
-              Contact Us
-            </Link>
-          </h4>
-          <p className="footerp">AtlantisFrame</p>
-          <p className="footerp">
-            Östermalmsgatan 12, 114 42 Stockholm, Sweden
-          </p>
-          <p className="footerp">
-            Email: info@AtlantisFrame.com | Phone: +46 0 000 000 00
-          </p>
+        <div className="footercontent">
+          <h4 className="underline">Legal</h4>
+          
         </div>
       </div>
       <div className="copyright">
