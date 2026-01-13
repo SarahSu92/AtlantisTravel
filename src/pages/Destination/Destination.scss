@@ -1,0 +1,170 @@
+.destination-page {
+  padding: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: sans-serif;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .searchtext {
+    font-size: 1rem;
+    margin-left: 1rem;
+
+  }
+}
+
+/* Searchfield */
+.destination-page input[type="text"] {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  margin-left: 1rem;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.2s;
+
+  &:focus {
+    border-color: #f94a0b;
+    border-width: 2px;
+
+  }
+}
+
+/* Screen reader only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Grid */
+.destination {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* card styling */
+.destination-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    align-items: stretch;
+
+
+
+  h3 {
+    margin: 0.5rem 0 0.5rem 0;
+    font-size: 1.1rem;
+
+    &:hover {
+      color: #f94a0b;
+    }
+  }
+}
+
+.activities {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
+  list-style: none;
+}
+
+.activity {
+  color: #f94a0b;
+  position: relative;
+  font-size: 1rem;
+  font-weight: 500;
+  list-style: none;
+}
+
+.activity:not(:last-child)::after {
+  content: "♦";
+  color: #f94a0b;
+  margin-left: 0.5rem;
+}
+
+.destination-card a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+
+  &:focus {
+    outline: 2px solid #f94a0b;
+    outline-offset: 2px;
+    border-radius: 0;
+
+  }
+}
+
+.img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  padding-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .destination-page {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: sans-serif;
+
+    h1 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+    }
+
+    .searchtext {
+      font-size: 1.1rem;
+    }
+  }
+
+  .destination {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .destination-page input[type="text"] {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.2s;
+
+    &:focus {
+      border-color: #f94a0b;
+    }
+  }
+}

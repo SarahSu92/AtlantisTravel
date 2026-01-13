@@ -1,0 +1,194 @@
+.contact {
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.c-text {
+    p {
+        text-align: center;
+        max-width: 300px;
+        margin: 0;
+    }
+}
+
+.c-hero {
+    background-image: url('/Azores/waterfall.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 40vh;
+
+    /* Overlay */
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.30);
+        z-index: 0;
+    }
+}
+
+.hero-text {
+    position: absolute;
+    top: 55%;
+    color: #fff;
+    z-index: 1;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    p {
+        white-space: nowrap;
+        margin: 0.25rem 0;
+    }
+}
+
+/* Category heading with lines */
+.c-cat {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* Success message */
+.sucess {
+    max-width: 480px;
+    padding: 0.75rem;
+    background-color: #e6f4ea;
+    color: #1e4620;
+    text-align: center;
+    font-weight: 500;
+
+    p {
+        text-align: center;
+        max-width: 300px;
+        margin: 0;
+    }
+}
+
+/* Form card */
+.c-form {
+    width: 80%;
+    max-width: 480px;
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+/* Fields */
+.c-field {
+    display: flex;
+    flex-direction: column;
+
+    label {
+        margin-bottom: 0.25rem;
+        font-weight: 500;
+    }
+
+    input,
+    textarea {
+        padding: 0.6rem 0.75rem;
+        border: 1px solid #ccc;
+        font-family: inherit;
+        font-size: 1rem;
+
+        &:focus {
+            outline: 2px solid #f94a0b;
+            outline-offset: 2px;
+        }
+    }
+}
+
+/* Errors */
+.c-error {
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    color: #f94a0b;
+}
+
+/* Button */
+.c-form button {
+    color: #000;
+    text-decoration: none;
+    border: 2px solid;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #fff;
+    transition: background-color 0.4s ease,
+        color 0.4s ease,
+        border-color 0.4s ease;
+
+    &:focus {
+        outline: 2px solid #ff8a65;
+        outline-offset: 2px;
+        border-radius: 0;
+    }
+
+    &:hover {
+        color: #fff;
+        background-color: #ff8a65;
+        border-color: #ff8a65;
+    }
+}
+
+/* Screen reader only */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+@media (min-width: 768px) {
+    .c-text {
+        p {
+            max-width: 500px;
+        }
+    }
+
+    .c-hero {
+        background-image: url('/Azores/waterfall.jpg');
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        position: relative;
+        height: 40vh;
+    }
+}
+
+@media (min-width: 1024px) {
+    .c-text {
+        p {
+            max-width: 500px;
+        }
+    }
+
+    .c-hero {
+        background-image: url('/Azores/waterfall.jpg');
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        position: relative;
+        height: 40vh;
+    }
+}
