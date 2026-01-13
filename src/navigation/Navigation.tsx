@@ -43,7 +43,7 @@ useEffect(() => {
   return (
     <nav>
       <a href="/" className="logo">
-        Atlantis Frame
+        Atlantis Travel
       </a>
 
       <button
