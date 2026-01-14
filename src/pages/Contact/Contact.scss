@@ -17,7 +17,7 @@
 }
 
 .c-hero {
-    background-image: url('/Azores/waterfall.jpg');
+    background-image: url('');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -39,7 +39,6 @@
     top: 55%;
     color: #fff;
     z-index: 1;
-    top: 55%;
     left: 50%;
     transform: translateX(-50%);
 
@@ -162,33 +161,35 @@
 @media (min-width: 768px) {
     .c-text {
         p {
-            max-width: 500px;
+            max-width: 400px;
+            font-size: 1.2rem;
+        }
+    }
+
+    .hero-text {
+        position: absolute;
+        top: 52%;
+
+        p {
+            white-space: nowrap;
+            margin: 0.25rem 0;
+            font-size: 1.2rem;            
         }
     }
 
     .c-hero {
-        background-image: url('/Azores/waterfall.jpg');
-        background-size: cover;
-        background-position: top;
-        background-repeat: no-repeat;
-        position: relative;
-        height: 40vh;
+        height: 30vh;
     }
 }
 
 @media (min-width: 1024px) {
     .c-text {
         p {
-            max-width: 500px;
+            max-width: 400px;
         }
     }
 
     .c-hero {
-        background-image: url('/Azores/waterfall.jpg');
-        background-size: cover;
-        background-position: top;
-        background-repeat: no-repeat;
-        position: relative;
         height: 40vh;
     }
 }

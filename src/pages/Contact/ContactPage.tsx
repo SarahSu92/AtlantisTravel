@@ -1,4 +1,4 @@
-import { useState, type FormEvent } from 'react';
+import { useEffect, useState, type FormEvent } from 'react';
 import './Contact.scss';
 
 interface FormErrors {
@@ -49,11 +49,21 @@ export const ContactPage = () => {
     }
   };
 
+  useEffect(() => {
+    if (!submitted) return;
+
+    const timer = setTimeout(() => {
+      setSubmitted(false);
+    }, 5000); // 5 seconds
+
+    return () => clearTimeout(timer);
+  }, [submitted]);
+
   return (
     <>
       <section className="c-hero">
         <h1 className="c-cat">Contact us</h1>
-         <div className="hero-text">
+        <div className="hero-text">
           <p>Have a question or need assistance?</p>
         </div>
       </section>
