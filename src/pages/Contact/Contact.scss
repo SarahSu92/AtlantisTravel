@@ -17,12 +17,12 @@
 }
 
 .c-hero {
-    background-image: url('');
+    background-image: url('/contactimg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    height: 40vh;
+    height: 30vh;
 
     /* Overlay */
     &::before {
@@ -36,7 +36,7 @@
 
 .hero-text {
     position: absolute;
-    top: 55%;
+    top: 62%;
     color: #fff;
     z-index: 1;
     left: 50%;
@@ -51,11 +51,11 @@
 /* Category heading with lines */
 .c-cat {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #fff;
 }
@@ -166,14 +166,24 @@
         }
     }
 
+    .c-cat {
+        top: 50%;
+        font-size: 2rem;
+    }
+
+    .c-hero {
+        background-position: center;
+        height: 30vh;
+
+    }
+
     .hero-text {
-        position: absolute;
-        top: 52%;
+        top: 62%;
 
         p {
             white-space: nowrap;
             margin: 0.25rem 0;
-            font-size: 1.2rem;            
+            font-size: 1.3rem;
         }
     }
 
@@ -183,13 +193,13 @@
 }
 
 @media (min-width: 1024px) {
-    .c-text {
-        p {
-            max-width: 400px;
-        }
+    .hero-text {
+        top: 65%;
+
     }
 
     .c-hero {
         height: 40vh;
+        background-position: 50% 40%;
     }
 }
