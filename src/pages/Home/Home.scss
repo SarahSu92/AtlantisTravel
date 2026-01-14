@@ -222,7 +222,7 @@
     svg {
       display: block;
       width: 100%;
-      height: 120px;
+      height: 100px;
       overflow: visible;
     }
   }
@@ -232,4 +232,12 @@
     margin: 0;
   }
 
+}
+
+@media (min-width: 1280px) {
+  .hero-wave {
+    svg {
+      height: 180px;
+    }
+  }
 }
