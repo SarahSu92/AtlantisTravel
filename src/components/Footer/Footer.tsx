@@ -49,7 +49,7 @@ export const Footer = () => {
         </div>
       </div>
       <div className="copyright">
-        &copy; 2025 AtlantisFrame AB. All rights reserved.
+        &copy; 2025 Atlantis Travel AB. All rights reserved.
       </div>
     </>
   );
