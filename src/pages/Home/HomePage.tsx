@@ -21,7 +21,7 @@ export const HomePage = () => {
           </Link>
         </div>
         <div className="hero-wave">
-          <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+          <svg viewBox="0 0 1440 320" preserveAspectRatio="none" aria-hidden="true">
             <path
               d="M0,80 C360,250 1080,-50 1440,120 L1440,320 L0,320 Z"
               fill="#fff"
