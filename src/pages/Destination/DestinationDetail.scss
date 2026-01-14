@@ -16,6 +16,10 @@
   border: 0;
 }
 
+.map-wrapper {
+  margin-top: 2rem;
+}
+
 .heroimg {
   width: 100%;
   height: 250px;
@@ -26,6 +30,7 @@
   width: 100%;
   height: 40vh;
   object-fit: cover;
+  margin-top: -3rem;
 }
 
 .postition {
@@ -101,6 +106,7 @@ ul {
 .text {
   margin: 0.2rem 0 0;
   font-size: 1.1rem;
+  max-width: 600px;
   line-height: 1.9;
 }
 
@@ -189,7 +195,7 @@ p {
   .destination-detail {
     margin: 0 auto;
     padding: 1rem;
-    max-width: 700px;
+    max-width: 600px;
 
   }
 
@@ -201,45 +207,7 @@ p {
   }
 
   .heroimg {
-    width: 80%;
-    height: 30vh;
-    object-fit: cover;
-  }
-
-  .bottomimg {
-    width: 80%;
-    height: 30vh;
-    object-fit: cover;
-  }
-
-  .text {
-    max-width: 80%;
-  }
-
-  .hotels-grid {
-    display: grid;
-    gap: 1.5rem;
-    width: 65%;
-    grid-template-columns: repeat(2, 1fr);
-    padding-top: 2rem;
-    margin: 0;
-  }
-
-  .budgettext {
-    max-width: 80%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .destination-detail {
-    margin: 0 auto;
-    padding: 1rem;
-    max-width: 900px;
-
-  }
-
-  .heroimg {
-    width: 80%;
+    width: 100%;
     height: 50vh;
     object-fit: cover;
   }
@@ -248,18 +216,54 @@ p {
     width: 100%;
     height: 50vh;
     object-fit: cover;
+
+  }
+
+  .hotels-grid {
+    display: grid;
+    gap: 1.5rem;
+    width: 80%;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 2rem;
+    margin: 0;
+  }
+
+  .hotel-card-content {
+  h3 {   
+    min-height: 0;   
+  }
+}
+
+}
+
+
+@media (min-width: 1024px) {
+  .destination-detail {
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 800px;
+
+  }
+  .text {
+    max-width: 800px;
+  }
+
+  .budgettext {
+    max-width: 700px;
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 2.2rem;
     font-weight: 700;
     margin-bottom: 0.3rem;
   }
 
   .catdest {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
     border-left: 4px solid #2c6cf2;
     padding-left: 0.6rem;
   }
+
+ 
 }

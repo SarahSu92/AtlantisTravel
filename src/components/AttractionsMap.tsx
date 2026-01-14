@@ -39,7 +39,7 @@ export const AttractionsMap = ({
         height: '300px',
         width: '80%',
         margin: '0 auto', 
-        display: 'block', 
+        display: 'block',
       }}
     >
       <TileLayer

@@ -30,7 +30,7 @@ export const Aruba =
     bestTimeToTravel:
       'April–August for ideal weather; December–March is peak season with higher prices; hurricane-free year-round',
     tips: [
-      'Tap water is safe to drink',
+      'Tap water is safe to drink.',
     ],
   hotels: [
   {

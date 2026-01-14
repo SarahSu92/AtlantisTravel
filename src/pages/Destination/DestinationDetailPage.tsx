@@ -98,7 +98,7 @@ export const DestinationDetailPage = () => {
           </section>
 
           <section className="box">
-            <h2 className="catdest">Hotels</h2>
+            <h2 className="catdest">Where to stay</h2>
             <div className="hotels-grid">
               {destination.hotels.map((hotel) => (
                 <article
