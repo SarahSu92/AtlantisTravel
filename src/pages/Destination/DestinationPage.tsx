@@ -48,7 +48,7 @@ export const DestinationPage = () => {
         if (regionDestinations.length === 0) return null;
 
         return (
-          <section key={region} className="region-section">
+          <section key={region} className="region-section"  aria-labelledby={`${region}-heading`}>
             <div className="cathero">
               <h2 className="cat">{region}</h2>
             </div>

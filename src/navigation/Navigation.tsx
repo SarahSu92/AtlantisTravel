@@ -41,7 +41,7 @@ useEffect(() => {
 }, [open, setOpen]);
 
   return (
-    <nav>
+    <nav aria-label="Main site navigation">
       <a href="/" className="logo">
         Atlantis Travel
       </a>

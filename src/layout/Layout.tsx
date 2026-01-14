@@ -12,7 +12,7 @@ export const Layout = () => {
       <header>
         <Navigation open={menuOpen} setOpen={setMenuOpen} />
       </header>
-      <main aria-hidden={menuOpen}>
+      <main role="main" aria-hidden={menuOpen}>
         <Outlet />
       </main>
        <footer aria-hidden={menuOpen}>
