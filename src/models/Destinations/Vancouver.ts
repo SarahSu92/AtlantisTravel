@@ -5,8 +5,7 @@ export const Vancouver =
     country: 'Canada',
     region: 'NORTH AMERICA',
     heroimage: '/Vancover/globe.jpg',
-    image1: '/Vancover/streetwalk.jpg',
-    image2: '/Vancover/harbour.jpg',
+    image2: '/Vancover/canada.jpg',
     description:
       'Vancouver is a coastal city in British Columbia known for its mountain–ocean scenery, multicultural atmosphere, and year-round outdoor activities.',
     shortDescription:
