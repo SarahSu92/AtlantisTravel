@@ -1,10 +1,12 @@
 nav {
   position: relative;
+  height: 4rem;
 
   .logo {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: #fff;
     text-decoration: none;
+    margin-top: 1rem;
 
 
     &:focus {
@@ -40,10 +42,10 @@ nav {
 }
 
 /* Hamburger btn */
-.menubtn {  
+.menubtn {
   display: flex;
-  position: absolute; 
-  right: 2rem; 
+  position: absolute;
+  right: 2rem;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -53,9 +55,8 @@ nav {
   border: none;
   cursor: pointer;
   z-index: 101;
-  top: 1rem;
   box-sizing: content-box;
-  padding: 0;
+  margin-top: 1rem;
 
   &:focus {
     outline: 2px solid #f94a0b;
@@ -105,14 +106,14 @@ nav {
   background: #111;
   transition: right 0.3s ease;
   z-index: 100;
-  display: flex;           
-  flex-direction: column;  
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  padding-top: 10rem;    
+  padding-top: 10rem;
 
   li {
-    margin: 1rem 0; 
-    list-style: none;        
+    margin: 1rem 0;
+    list-style: none;
   }
 
   li a {
@@ -162,9 +163,16 @@ nav {
 /* Tablet/Desktop menu */
 @media (min-width: 768px) {
   nav {
+    height: 4.5rem;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+    }
 
     .menubtn {
       display: none;
@@ -172,7 +180,7 @@ nav {
 
     .logo {
       font-size: 2rem;
-      margin-left: 1rem;
+      margin: 0 4rem 0 1rem;
 
     }
 
@@ -188,14 +196,10 @@ nav {
 
     .tablet-desktop {
       position: static;
-      width: auto;
-      height: auto;
       display: flex;
       flex-direction: row;
-      gap: 2rem;
+      gap: 1.5rem;
       background: none;
-      padding: 0;
-      opacity: 1;
       transform: none;
       pointer-events: auto;
 
@@ -203,7 +207,7 @@ nav {
         position: relative;
         width: 100%;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         color: #fff;
         text-decoration: none;
         transition: background 0.3s ease, color 0.3s ease;
