@@ -21,7 +21,11 @@ export const HomePage = () => {
           </Link>
         </div>
         <div className="hero-wave">
-          <svg viewBox="0 0 1440 320" preserveAspectRatio="none" aria-hidden="true">
+          <svg
+            viewBox="0 0 1440 320"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+          >
             <path
               d="M0,80 C360,250 1080,-50 1440,120 L1440,320 L0,320 Z"
               fill="#fff"
@@ -48,8 +52,8 @@ export const HomePage = () => {
                   }
                   alt={dest.name}
                 />
+                <h3>{dest.name}</h3>
               </Link>
-              <h3>{dest.name}</h3>
               <div className="activities">
                 {dest.activities.map((activity) => (
                   <span key={activity} className="activity">
@@ -57,7 +61,7 @@ export const HomePage = () => {
                   </span>
                 ))}
               </div>
-              <p>{dest.shortDescription}</p>              
+              <p>{dest.shortDescription}</p>
             </article>
           ))}
         </div>
