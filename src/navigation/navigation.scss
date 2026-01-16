@@ -1,11 +1,5 @@
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  background: #111;
   position: relative;
-  height: 40px;
 
   .logo {
     font-size: 1.5rem;
@@ -21,15 +15,35 @@ nav {
   }
 }
 
+.nav-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
 .tablet-desktop {
   display: none;
 }
 
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 99;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
 /* Hamburger btn */
-.menubtn {
-  position: relative;
+.menubtn {  
   display: flex;
-  right: 0.5rem;
+  position: absolute; 
+  right: 2rem; 
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -39,7 +53,9 @@ nav {
   border: none;
   cursor: pointer;
   z-index: 101;
+  top: 1rem;
   box-sizing: content-box;
+  padding: 0;
 
   &:focus {
     outline: 2px solid #f94a0b;
@@ -81,60 +97,75 @@ nav {
 /* Mobile menu */
 .mobile-menu {
   position: fixed;
-  display: flex;
   top: 0;
-  right: 0;
-  width: 100vw;
+  right: -100%;
+  width: 60%;
+  max-width: 300px;
   height: 100vh;
-  flex-direction: column;
-  gap: 2rem;
-  list-style: none;
-  background: rgba(0, 0, 0, 0.95);
-  padding-top: 5rem;
-  opacity: 0;
-  transform: translateY(-20px);
-  pointer-events: none;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  z-index: 99;
+  background: #111;
+  transition: right 0.3s ease;
+  z-index: 100;
+  display: flex;           
+  flex-direction: column;  
+  align-items: center;
+  padding-top: 10rem;    
+
+  li {
+    margin: 1rem 0; 
+    list-style: none;        
+  }
 
   li a {
-    display: block;
+    position: relative;
     width: 100%;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     color: #fff;
     text-decoration: none;
     transition: background 0.3s ease, color 0.3s ease;
 
-    &.active {
-      border-bottom: 2px solid #fff;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background-color: #fff;
+      transform: translateX(-50%);
+      transition: width 0.3s ease;
     }
 
     &:focus {
       outline: 2px solid #f94a0b;
       outline-offset: 2px;
       border-radius: 0;
-
     }
 
     &:hover {
       color: #f94a0b;
     }
+
+    &:hover::after,
+    &.active::after {
+      width: 100%;
+    }
+
   }
 }
 
 .mobile-menu.active {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  right: 0;
+  margin: 0;
 }
 
 /* Tablet/Desktop menu */
 @media (min-width: 768px) {
   nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
     .menubtn {
       display: none;
     }
@@ -172,7 +203,7 @@ nav {
         position: relative;
         width: 100%;
         text-align: center;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         color: #fff;
         text-decoration: none;
         transition: background 0.3s ease, color 0.3s ease;
