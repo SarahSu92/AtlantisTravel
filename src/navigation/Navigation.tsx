@@ -48,6 +48,7 @@ export const Navigation = ({ open, setOpen }: NavigationProps) => {
   return (
     <nav aria-label="Main site navigation">
       <div className="nav-inner">
+        <img src={`${import.meta.env.BASE_URL}globe.svg`} alt="Atlantis Travel logo" className='iconimg'/>
         <a href="/" className="logo">
           Atlantis Travel
         </a>

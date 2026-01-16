@@ -8,7 +8,6 @@ nav {
     text-decoration: none;
     margin-top: 1rem;
 
-
     &:focus {
       outline: 2px solid #f94a0b;
       outline-offset: 2px;
@@ -17,15 +16,19 @@ nav {
   }
 }
 
+.iconimg {
+  filter: invert(1);
+  width: 35px;
+  height: 35px;
+  margin-right: 0.5rem;
+  margin-top: 0.8rem;
+}
+
 .nav-inner {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-}
-
-.tablet-desktop {
-  display: none;
 }
 
 /* Overlay */
@@ -155,6 +158,10 @@ nav {
   }
 }
 
+.tablet-desktop {
+  display: none;
+}
+
 .mobile-menu.active {
   right: 0;
   margin: 0;
@@ -172,6 +179,13 @@ nav {
       align-items: center;
       justify-content: space-between;
 
+    }
+
+    .iconimg {
+      width: 45px;
+      height: 45px;
+      margin-right: 0rem;
+      margin-top: 0rem;
     }
 
     .menubtn {
