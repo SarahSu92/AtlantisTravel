@@ -173,9 +173,20 @@
 }
 
 @media screen and (min-width: 1280px) {
+    .aboutcat {
+    font-size: 2rem; 
+    padding-top: 2rem;   
+    margin: 2rem 0 1rem 0;
+}
+
     .aboutus {
         width: 500px;
         line-height: 1.9;
+    }
+
+    .aboutimg {
+        width: 100%;
+        padding-top: 0.5rem;
     }
 
     .about-page {

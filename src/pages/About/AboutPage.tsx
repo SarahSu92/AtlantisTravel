@@ -5,7 +5,7 @@ export const AboutPage = () => {
   return (
     <>
       <section className="cathero">
-        <h1 className="aboutcat">About us</h1>
+        <h1 className="aboutcat">ABOUT US</h1>
       </section>
       <section className="about-page">
         <article className="aboutart">

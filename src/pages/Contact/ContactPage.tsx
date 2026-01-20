@@ -62,7 +62,7 @@ export const ContactPage = () => {
   return (
     <>
       <section className="c-hero">
-        <h1 className="c-cat">Contact us</h1>
+        <h1 className="c-cat">CONTACT US</h1>
         <div className="hero-text">
           <p>Have a question or need assistance?</p>
         </div>
@@ -90,7 +90,7 @@ export const ContactPage = () => {
           </span>
 
           <div className="c-field">
-            <label htmlFor="name">Name</label>
+            <label htmlFor="name">*Name</label>
             <input
               id="name"
               name="name"
@@ -107,7 +107,7 @@ export const ContactPage = () => {
           </div>
 
           <div className="c-field">
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email">*Email</label>
             <input
               id="email"
               name="email"
@@ -124,7 +124,7 @@ export const ContactPage = () => {
           </div>
 
           <div className="c-field">
-            <label htmlFor="message">Message</label>
+            <label htmlFor="message">*Message</label>
             <textarea
               id="message"
               name="message"
