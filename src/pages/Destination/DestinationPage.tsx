@@ -78,7 +78,11 @@ export const DestinationPage = () => {
                     </ul>
                   )}
                   <p>{dest.shortDescription}</p>
-                  <Link to={`/destination/${dest.id}`} className="cardbtn">
+                  <Link
+                    to={`/destination/${dest.id}`}
+                    className="cardbtn"
+                    aria-label={`Read more about ${dest.name}`}
+                  >
                     READ MORE
                   </Link>
                 </article>

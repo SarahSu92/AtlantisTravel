@@ -16,7 +16,11 @@ export const HomePage = () => {
             Discover new destinations, meet new cultures, and have fun along the
             way.
           </p>
-          <Link to="/DestinationPage" className="herobtn">
+          <Link
+            to="/DestinationPage"
+            className="herobtn"
+            aria-label={`See all destinations`}
+          >
             EXPLORE NOW
           </Link>
         </div>
@@ -62,15 +66,23 @@ export const HomePage = () => {
                 ))}
               </div>
               <p>{dest.shortDescription}</p>
-              <Link to={`/destination/${dest.id}`} className="cardbtn">
-                READ MORE 
+              <Link
+                to={`/destination/${dest.id}`}
+                className="cardbtn"
+                aria-label={`Read more about ${dest.name}`}
+              >
+                READ MORE
               </Link>
             </article>
           ))}
         </div>
       </section>
       <div className="hero-box">
-        <Link to={`/DestinationPage`} className="btn">
+        <Link
+          to={`/DestinationPage`}
+          className="btn"
+          aria-label={`See all destinations`}
+        >
           See all our destinations
         </Link>
       </div>
