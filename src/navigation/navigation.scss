@@ -20,7 +20,7 @@ nav {
   filter: invert(1);
   width: 35px;
   height: 35px;
-  margin-right: 0.5rem;
+  margin-right: 0.3rem;
   margin-top: 0.8rem;
 }
 
@@ -48,7 +48,7 @@ nav {
 .menubtn {
   display: flex;
   position: absolute;
-  right: 2rem;
+  right: 1.2rem;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -59,7 +59,7 @@ nav {
   cursor: pointer;
   z-index: 101;
   box-sizing: content-box;
-  margin-top: 1rem;
+  margin-top: 0.9rem;
 
   &:focus {
     outline: 2px solid #f94a0b;

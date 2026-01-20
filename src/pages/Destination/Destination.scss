@@ -92,7 +92,8 @@
 
 .activity {
   color: #f94a0b;
-  position: relative;
+  display: inline-flex;
+  align-items: center;
   font-size: 1rem;
   list-style: none;
   font-weight: 700;
@@ -100,6 +101,7 @@
 
 .activity:not(:last-child)::after {
   content: "♦";
+  font-size: 0.5rem;
   color: #f94a0b;
   margin-left: 0.5rem;
   font-weight: 700;
@@ -143,6 +145,10 @@
     }
   }
 
+  .activity:not(:last-child)::after {
+    font-size: 0.8rem;
+  }
+
   .destination {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -180,5 +186,9 @@
     p {
       min-height: 0;
     }
+  }
+
+  .activity:not(:last-child)::after {
+    font-size: 1rem;   
   }
 }
