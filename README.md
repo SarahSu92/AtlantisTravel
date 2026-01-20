@@ -28,7 +28,8 @@ Users can click on markers to see the title and description of each attraction. 
 
 
 ## Screenshots
-<img width="761" height="442" alt="Skärmbild 2026-01-14 171556" src="https://github.com/user-attachments/assets/6475f624-842c-48be-9a69-8d6e287350f1" />
+
+<img width="824" height="511" alt="Skärmbild 2026-01-20 145831" src="https://github.com/user-attachments/assets/488dfae2-e9f8-4e71-b787-3bf1d0d870f3" />
 
 
 <img width="765" height="447" alt="Skärmbild 2026-01-14 171622" src="https://github.com/user-attachments/assets/732deadf-91ed-4766-8cf8-29cafb742d87" />
