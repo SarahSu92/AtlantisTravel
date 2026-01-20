@@ -25,11 +25,9 @@ export const DestinationPage = () => {
       <p className="searchtext">
         Search by activity: hiking, monuments, beaches, urban culture.
       </p>
-
       <label htmlFor="activity-search" className="sr-only">
         Search destinations by activity
       </label>
-
       <input
         id="activity-search"
         type="text"
@@ -38,7 +36,6 @@ export const DestinationPage = () => {
         onChange={(e) => setSearch(e.target.value)}
         className="search-input"
       />
-
       {regions.map((region) => {
         const regionDestinations = filterByActivity(
           DestinationCards.filter((d) => d.region === region),
@@ -48,11 +45,14 @@ export const DestinationPage = () => {
         if (regionDestinations.length === 0) return null;
 
         return (
-          <section key={region} className="region-section"  aria-labelledby={`${region}-heading`}>
+          <section
+            key={region}
+            className="region-section"
+            aria-labelledby={`${region}-heading`}
+          >
             <div className="cathero">
               <h2 className="cat">{region}</h2>
             </div>
-
             <div className="destination">
               {regionDestinations.map((dest) => (
                 <article key={dest.id} className="destination-card">
@@ -68,7 +68,6 @@ export const DestinationPage = () => {
                     />
                     <h3>{dest.name}</h3>
                   </Link>
-
                   {dest.activities.length > 0 && (
                     <ul className="activities">
                       {dest.activities.map((activity) => (
@@ -78,8 +77,10 @@ export const DestinationPage = () => {
                       ))}
                     </ul>
                   )}
-
                   <p>{dest.shortDescription}</p>
+                  <Link to={`/destination/${dest.id}`} className="cardbtn">
+                    READ MORE
+                  </Link>
                 </article>
               ))}
             </div>

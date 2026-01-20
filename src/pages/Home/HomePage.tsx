@@ -62,7 +62,7 @@ export const HomePage = () => {
                 ))}
               </div>
               <p>{dest.shortDescription}</p>
-              <Link to="/DestinationPage" className="cardbtn">
+              <Link to={`/destination/${dest.id}`} className="cardbtn">
                 READ MORE 
               </Link>
             </article>
